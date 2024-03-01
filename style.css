@@ -1,0 +1,162 @@
+.nadpis2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+hr {
+    border: 3px solid black;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    border-radius: 0 0 200px 200px;
+}
+
+.obrazek6 {
+    display: none;
+}
+
+.vyber {
+    background-color: #d7c792;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 80px;
+    font-size: 20px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.main2 {
+    background-color: #d9d9d9;
+    position: relative;
+    margin-top: -80px;
+    padding-top: 150px;
+}
+
+.prvniRadek {
+    display: grid;
+    grid-template-columns: 40% 25% 35%;
+}
+
+.druhyRadek {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.obrazek1 {
+    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obrazek2 {
+    grid-column-start: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obrazek3 {
+    grid-column-start: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obrazek4 {
+    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obrazek5 {
+    grid-column-start: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+    .nadpis2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .obrazek1 {
+        display: none;
+    }
+
+    .obrazek3 {
+        display: none;
+    }
+
+    .obrazek6 {
+        display: unset;
+        grid-column-start: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .obrazek2 {
+        grid-column-start: 1;
+    }
+
+    .prvniRadek {
+        grid-template-columns: 200px auto;
+        display: grid;
+
+    }
+
+    .druhyRadek {
+        margin-top: -5px;
+        grid-template-columns: 200px auto;
+    }
+
+    .nav2 {
+        padding-bottom: 100px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .main2 {
+        margin-top: -200px;
+        padding-top: 280px;
+    }
+
+    .a,
+    .b {
+        grid-row: 1;
+    }
+
+    .c {
+        grid-row: 2;
+
+    }
+
+    .d,
+    .e {
+        grid-row: 3;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+
+    
+}
