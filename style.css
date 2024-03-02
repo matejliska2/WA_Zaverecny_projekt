@@ -92,17 +92,50 @@ body {
     box-sizing: border-box;
 }
 
-.page1-header{
-    text-align: center;
+.page1 header{
+    background-color: #d7c792;
+}
+
+.page1-headerbox{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    padding: 20px;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 0 0 50px 50px;
+}
+
+#page1-search{
+    grid-column: 1;
+    text-align: left;
+    font-size: 45px;
+    margin: auto;
 }
 
 #page1-title{
+    grid-column: 2;
     font-size: 40px;
+    display:inline;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 18px;
+}
+
+#page1-arrows{
+    grid-column: 3;
+    text-align: right;
+    font-size: 45px;
+    margin: auto;
+    padding-top: 5px;
 }
 
 .page1-main{
     background-color: #d7c792;
     padding: 0 35px 0 35px; 
+    min-height: 700px;
 }
 
 .page1-img-row1{
